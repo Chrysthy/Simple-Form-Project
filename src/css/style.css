@@ -11,17 +11,35 @@ body {
 }
 
 .container {
-    background-color: #f599f5aa;
+    background-color: #c2b6c2aa;
     border-radius: 14px;
     margin: 14px;
 
-    max-width: 600px; /*no máximo*/
-    width: 100%; /*usar 100% dos 600px */
+    max-width: 600px;
+    /*no máximo*/
+    width: 100%;
+    /*usar 100% dos 600px */
 
-    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.5) ;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.5);
+
+    overflow: hidden;
+    /*tudo o que tiverpassando do container, ele irá esconder*/
 
 }
 
-header {
-    
+.header {
+    background: linear-gradient(120deg, rgb(215, 107, 248) 0%, rgb(154, 42, 168) 100%);
+    padding: 24px;
+    text-align: center;
+
+}
+
+.form {
+    padding: 18px;
+}
+
+.form-content {
+    margin-bottom: 8px;
+    padding-bottom: 18px;
+    position: relative;
 }
