@@ -1,0 +1,27 @@
+body {
+    background-color: #121212;
+    color: #fff;
+
+    width: 100%;
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    background-color: #f599f5aa;
+    border-radius: 14px;
+    margin: 14px;
+
+    max-width: 600px; /*no máximo*/
+    width: 100%; /*usar 100% dos 600px */
+
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.5) ;
+
+}
+
+header {
+    
+}
