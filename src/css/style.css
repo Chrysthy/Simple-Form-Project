@@ -40,7 +40,7 @@ body {
 
 .form-content {
     margin-bottom: 8px;
-    padding-bottom: 18px;
+    padding-bottom: 15px;
     position: relative;
 }
 
@@ -61,10 +61,10 @@ body {
 
 .form-content a {
     position: absolute;
-    bottom: -2px;
+    bottom: -3px;
 
     left: 0;
-    /* visibility: hidden; */
+    visibility: hidden;
 }
 
 .form button {
@@ -90,6 +90,8 @@ body {
 
 }
 
+
+/* Aparecer mensagem e borda vermelha de erro */
 .form-content.error input {
     border-color: #ff3b25;
 }
