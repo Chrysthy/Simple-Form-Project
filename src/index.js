@@ -7,9 +7,6 @@ const passwordConfirmation = document.getElementById('password-confirmation');
 form.addEventListener('submit', (event) => {
     event.preventDefault();
 
-    checkInputUsername();
-    checkInputEmail();
-    checkInputPassword();
 
 });
 
@@ -25,7 +22,6 @@ function checkInputUsername() {
         formItem.className = 'form-content'
     }
 };
-
 
 function checkInputEmail() {
     const emailValue = email.value.trim();
@@ -53,6 +49,39 @@ function checkInputPassword() {
         formItem.className = 'form-content'
     }
 }
+
+function checkInputPasswordConfirmation() {
+    const passwordValue = password.value;
+    const confirmationValue = passwordConfirmation.value.trim();
+
+    if (confirmationValue === '') {
+        errorInput(passwordConfirmation, 'You must confirm your password')
+
+    } else if (confirmationValue !== passwordValue) {
+        errorInput(passwordConfirmation, 'Passwords do not match')
+
+    } else {
+        const formItem = passwordConfirmation.parentElement;
+        formItem.className = 'form-content'
+    }
+
+}
+
+
+function checkForm() {
+
+    checkInputUsername();
+    checkInputEmail();
+    checkInputPassword();
+    checkInputPasswordConfirmation();
+
+    const formItems = form.querySelectorAll('.form-content')
+
+    
+}
+
+
+
 
 
 function errorInput(input, message) {
