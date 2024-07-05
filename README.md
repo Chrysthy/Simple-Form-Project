@@ -1,5 +1,8 @@
 # Simple Form Project with Validations 📃
 
+<br>
+
+<img src="src/img/img-project.png" alt="Imagem do Projeto">
 
 <h2> Suggestions </h2>
 <p> Do you want to add or report an error? Please, feel free to do it! 😉 </p>
