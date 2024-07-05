@@ -7,8 +7,19 @@ const passwordConfirmation = document.getElementById('password-confirmation');
 form.addEventListener('submit', (event) => {
     event.preventDefault();
 
+    checkForm()
 
 });
+
+username.addEventListener('blur', () => {
+
+    checkInputUsername()
+})
+
+email.addEventListener('blur', () => {
+
+    checkInputEmail()
+})
 
 
 function checkInputUsername() {
@@ -82,10 +93,13 @@ function checkForm() {
         return item.className === 'form-content'
     })
 
+    if (isValid) {
+        alert('Cadastraso com Sucesso!')
+
+    } // else {
+    //     alert('Preencha todos os campos corretamente!')
+    // }
 }
-
-
-
 
 
 function errorInput(input, message) {
@@ -97,3 +111,5 @@ function errorInput(input, message) {
     formItem.className = 'form-content error';
 
 };
+
+//37:53
