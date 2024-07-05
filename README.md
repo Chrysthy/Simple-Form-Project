@@ -1,4 +1,4 @@
-# Simple Form Project 📃
+# Simple Form Project with Validations 📃
 
 
 <h2> Suggestions </h2>
