@@ -94,7 +94,7 @@ function checkForm() {
     })
 
     if (isValid) {
-        alert('Cadastraso com Sucesso!')
+        alert('Cadastrado com Sucesso!')
 
     } // else {
     //     alert('Preencha todos os campos corretamente!')
